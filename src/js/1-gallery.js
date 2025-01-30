@@ -1,3 +1,5 @@
+import SimpleLightbox from "simplelightbox";
+
 const images = [
       {
         preview:
@@ -81,3 +83,6 @@ const images = [
   .join("");
 
   gallery.innerHTML = def;
+
+
+new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
